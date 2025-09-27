@@ -1,0 +1,18 @@
+415:
+  Id: 415
+  ItemId: 30
+  Type: Event
+  World: 8
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0x202C
+  OverallChestIndex: 0
+416:
+  Id: 416
+  ItemId: 29
+  Type: Event
+  World: 8
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0x204E
+  OverallChestIndex: 0

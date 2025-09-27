@@ -1,0 +1,120 @@
+title: Antiform Only
+description: Changes all instances of Sora and Roxas into Antiform. This is not compatible with GoA ROM Edition.
+assets:
+#Lua Script
+- name: scripts/AntiformOnly.lua
+  method: copy
+  source:
+  - name: AntiformOnly.lua
+- name: scripts/shopfaceReconstruct.lua
+  method: copy
+  source:
+  - name: shopfaceReconstruct.lua
+#Various Stuff
+- name: 03system.bin
+  method: binarc
+  source:
+  - name: item #Implement New Pictures & Stats
+    type: list
+    method: listpatch
+    source:
+    - name: 03system.bin/ItemList.yml
+      type: item
+  - name: trsr
+    type: list
+    method: listpatch
+    source:
+    - name: 03system.bin/TrsrList.yml
+      type: trsr
+- name: itempic/item-269.imd #Final Form
+  method: copy
+  source:
+  - name: itempic/Final Form.imd
+- name: itempic/item-271.imd #Antiform
+  method: copy
+  source:
+  - name: itempic/Anti Form.imd
+- name: remastered/itempic/item-269.imd/-0.dds #Final Form
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/itempic/Final Form.dds
+- name: remastered/itempic/item-271.imd/-0.dds #Antiform
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/itempic/Anti Form.dds
+- name: msg/jp/sys.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys.yml
+      language: en
+- name: msg/us/sys.bar
+  multi:
+  - name: msg/fr/sys.bar
+  - name: msg/gr/sys.bar
+  - name: msg/it/sys.bar
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys.yml
+      language: en
+- name: msg/sp/sys.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys.yml
+      language: sp
+- name: msg/jp/sys.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys.yml
+      language: jp
+#ARD Editing
+- method: binarc
+  name: ard/eh03.ard #Memory's Skyscraper Cutscenes
+  multi:
+  - name: ard/jp/eh03.ard
+  - name: ard/us/eh03.ard
+  - name: ard/fr/eh03.ard
+  - name: ard/gr/eh03.ard
+  - name: ard/it/eh03.ard
+  - name: ard/sp/eh03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt07.ard #Market Street: Tram Common Cutscenes
+  multi:
+  - name: ard/jp/tt07.ard
+  - name: ard/us/tt07.ard
+  - name: ard/fr/tt07.ard
+  - name: ard/gr/tt07.ard
+  - name: ard/it/tt07.ard
+  - name: ard/sp/tt07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt07evt.yml
+    type: AreaDataScript
