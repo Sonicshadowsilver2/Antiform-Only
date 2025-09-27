@@ -10,6 +10,18 @@ assets:
   method: copy
   source:
   - name: shopfaceReconstruct.lua
+#Twilight Thorn
+- method: copy
+  name: obj/B_EX100.mset
+  source:
+  - name: obj/B_EX100.mset
+#Movement for Armor Xemnas II
+- name: obj/P_EX100_HTLF.mset
+  multi: 
+  - name: obj/P_EX100_BTLF.mset
+  method: copy
+  source:
+  - name: obj/P_EX100_HTLF.mset
 #Various Stuff
 - name: 00objentry.bin
   method: listpatch
@@ -123,4 +135,19 @@ assets:
     name: evt
     source:
     - name: ard/tt07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt08.ard #Station Plaza Cutscenes
+  multi:
+  - name: ard/jp/tt08.ard
+  - name: ard/us/tt08.ard
+  - name: ard/fr/tt08.ard
+  - name: ard/gr/tt08.ard
+  - name: ard/it/tt08.ard
+  - name: ard/sp/tt08.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt08evt.yml
     type: AreaDataScript

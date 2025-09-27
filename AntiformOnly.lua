@@ -66,9 +66,10 @@ function _OnFrame()
 		if ReadShort(Now+0x00) == 0x0102 and ReadByte(Now+0x08) == 0x34 then --New Game
 			WriteByte(Save+0x1CD9, 0x02) --Enable Square Button actions
 			WriteByte(Save+0x1CE5, 0x04) --Show Form Gauge
+			WriteShort(Save+0x32F4, 0x0047) --Antiform Keyblade
 		end
 		if ReadByte(Now+0x00) == 0x02 then --Twilight Town
-			if ReadByte(Now+0x08) == 0x9D or ReadByte(Now+0x08) == 0x78 or ReadByte(Now+0x08) == 0x7D then
+			if ReadByte(Now+0x08) == 0x78 or ReadByte(Now+0x08) == 0x7D then
 				WriteShort(UCM+0x009C, 0x005A) --Antiform -> Roxas
 			else
 				WriteShort(UCM+0x009C, 0x0059) --Roxas -> Antiform

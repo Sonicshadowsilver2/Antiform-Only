@@ -1,33 +1,3 @@
-85:
-  AnimationName: P_EX100_BTLF.mset
-  Before: false
-  DrawPriority: 0
-  FixColor: true
-  Flags: 4
-  Fly: false
-  Hift: false
-  IsPirate: false
-  ModelName: P_EX100_BTLF
-  NeoMoveset: 6
-  NeoStatus: 1
-  NoApdx: false
-  ObjectForm: ValorForm
-  ObjectId: 85
-  ObjectShadowSize: NoShadow
-  ObjectTargetType: M
-  ObjectType: PLAYER
-  Padding: 0
-  Page: 0
-  Scissoring: false
-  SpawnLimiter: 0
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  SubType: 0
-  WallOcclusion: false
-  WeaponJoint: 1
-  Weight: 25
 89:
   AnimationName: P_EX100_HTLF.mset
   Before: false
