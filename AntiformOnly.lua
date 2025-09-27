@@ -110,6 +110,8 @@ function _OnFrame()
 			WriteString(Obj0+0x0C8F0,'P_EX100_HTLF.mset\0') --Sora (Hunny Slider) MSET -> Antiform MSET
 			WriteString(Obj0+0x12690,'P_EX100_HTLF\0\0\0\0\0') --Sora (On Carpet) Model -> Antiform Model
 			WriteString(Obj0+0x154D0,'F_TT010_SORA.mset\0') --Skateboard (Roxas) MSET -> Skateboard (Sora) MSET
+			WriteShort(Obj0+0x25B28,0x0000) --Remove Small Chests (Twilight Town)
+			WriteShort(Obj0+0x25B68,0x0000) --Remove Large Chests (Twilight Town)
 		end
 	end
 end
