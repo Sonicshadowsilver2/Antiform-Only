@@ -11,6 +11,12 @@ assets:
   source:
   - name: shopfaceReconstruct.lua
 #Various Stuff
+- name: 00objentry.bin
+  method: listpatch
+  type: List
+  source:
+  - name: objentry.yml
+    type: objentry
 - name: 03system.bin
   method: binarc
   source:
