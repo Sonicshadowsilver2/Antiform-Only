@@ -107,6 +107,21 @@ assets:
       language: jp
 #ARD Editing
 - method: binarc
+  name: ard/dc05.ard #Hall of the Cornerstone Cutscenes
+  multi:
+  - name: ard/jp/dc05.ard
+  - name: ard/us/dc05.ard
+  - name: ard/fr/dc05.ard
+  - name: ard/gr/dc05.ard
+  - name: ard/it/dc05.ard
+  - name: ard/sp/dc05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/dc05evt.yml
+    type: AreaDataScript
+- method: binarc
   name: ard/eh03.ard #Memory's Skyscraper Cutscenes
   multi:
   - name: ard/jp/eh03.ard
@@ -120,6 +135,21 @@ assets:
     name: evt
     source:
     - name: ard/eh03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb05.ard #Ansem's Study Cutscenes
+  multi:
+  - name: ard/jp/hb05.ard
+  - name: ard/us/hb05.ard
+  - name: ard/fr/hb05.ard
+  - name: ard/gr/hb05.ard
+  - name: ard/it/hb05.ard
+  - name: ard/sp/hb05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb05evt.yml
     type: AreaDataScript
 - method: binarc
   name: ard/tt07.ard #Market Street: Tram Common Cutscenes
@@ -150,4 +180,19 @@ assets:
     name: evt
     source:
     - name: ard/tt08evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt28.ard #Tower: Wardrobe Cutscenes
+  multi:
+  - name: ard/jp/tt28.ard
+  - name: ard/us/tt28.ard
+  - name: ard/fr/tt28.ard
+  - name: ard/gr/tt28.ard
+  - name: ard/it/tt28.ard
+  - name: ard/sp/tt28.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt28evt.yml
     type: AreaDataScript
