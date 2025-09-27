@@ -104,10 +104,6 @@ function _OnFrame()
 			WriteShort(UCM+0x0478, 0x095A) --Sora (Christmas Town) -> Antiform (Christmas Town)
 			WriteShort(UCM+0x0680, 0x0671) --Sora (Space Paranoids) -> Antiform (Space Paranoids)
 			WriteShort(UCM+0x06B4, 0x0672) --Sora (Timeless River) -> Antiform (Timeless River)
-			WriteString(Obj0+0x0C870,'P_EX100_HTLF\0') --Sora (Blustery Rescue) Model -> Antiform Model
-			WriteString(Obj0+0x0C890,'P_EX100_HTLF.mset\0') --Sora (Blustery Rescue) MSET -> Antiform MSET
-			WriteString(Obj0+0x0C8D0,'P_EX100_HTLF\0') --Sora (Hunny Slider) Model -> Antiform Model
-			WriteString(Obj0+0x0C8F0,'P_EX100_HTLF.mset\0') --Sora (Hunny Slider) MSET -> Antiform MSET
 			WriteString(Obj0+0x12690,'P_EX100_HTLF\0\0\0\0\0') --Sora (On Carpet) Model -> Antiform Model
 			WriteString(Obj0+0x154D0,'F_TT010_SORA.mset\0') --Skateboard (Roxas) MSET -> Skateboard (Sora) MSET
 			WriteShort(Obj0+0x25B28,0x0000) --Remove Small Chests (Twilight Town)
