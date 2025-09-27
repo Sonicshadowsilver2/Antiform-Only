@@ -196,3 +196,18 @@ assets:
     source:
     - name: ard/tt28evt.yml
     type: AreaDataScript
+- method: binarc
+  name: ard/tt32.ard #Station of Serenity Cutscenes
+  multi:
+  - name: ard/jp/tt32.ard
+  - name: ard/us/tt32.ard
+  - name: ard/fr/tt32.ard
+  - name: ard/gr/tt32.ard
+  - name: ard/it/tt32.ard
+  - name: ard/sp/tt32.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt32evt.yml
+    type: AreaDataScript

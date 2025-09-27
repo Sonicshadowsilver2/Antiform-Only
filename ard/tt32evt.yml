@@ -9,7 +9,7 @@ AreaSettings 15 -1
 
 
 Program 0x9B
-AreaSettings 38 -1
+AreaSettings 37 -1
  SetProgressFlag 0x84A
  SetEvent "313" Type 1
  SetJump Type 1 World TT Area 32 Entrance 51 LocalSet 0 FadeType 1
