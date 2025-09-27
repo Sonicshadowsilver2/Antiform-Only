@@ -1,3 +1,12 @@
+69:
+  Id: 69
+  ItemId: 1
+  Type: Event
+  World: 0
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0x1800
+  OverallChestIndex: 0
 415:
   Id: 415
   ItemId: 30
