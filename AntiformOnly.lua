@@ -70,7 +70,7 @@ function _OnFrame()
 			WriteShort(Save+0x32FC, 0x0000) --Remove High Jump
 		end
 		if ReadByte(Now+0x00) == 0x02 then --Twilight Town
-			if ReadByte(Now+0x08) == 0x78 or ReadByte(Now+0x08) == 0x7D then
+			if ReadByte(Now+0x08) == 0x9D or ReadByte(Now+0x08) == 0x78 or ReadByte(Now+0x08) == 0x7D then
 				WriteShort(UCM+0x009C, 0x005A) --Antiform -> Roxas
 			else
 				WriteShort(UCM+0x009C, 0x0059) --Roxas -> Antiform

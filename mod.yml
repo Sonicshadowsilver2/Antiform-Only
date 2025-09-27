@@ -10,11 +10,6 @@ assets:
   method: copy
   source:
   - name: shopfaceReconstruct.lua
-#Twilight Thorn
-- method: copy
-  name: obj/B_EX100.mset
-  source:
-  - name: obj/B_EX100.mset
 #Movement for Armor Xemnas II
 - name: obj/P_EX100_HTLF.mset
   multi: 
