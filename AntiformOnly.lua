@@ -76,7 +76,7 @@ function _OnFrame()
 				WriteShort(UCM+0x009C, 0x0059) --Roxas -> Antiform
 			end
 			if ReadByte(Now+0x01) == 0x1C and ReadByte(Now+0x08) == 0x01 and ReadByte(Save+0x1CE5) == 0x05 then
-				WriteByte(Save+0x1CE5, 0x06)
+				WriteByte(Save+0x1CE5, 0x01)
 			end
 		end
 		if ReadByte(Now+0x00) == 0x0A then --Pride Lands
