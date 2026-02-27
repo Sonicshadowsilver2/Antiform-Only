@@ -1,0 +1,89 @@
+MemtEntries: 
+  - Index: 0 #Specify a memt index to edit. Use a new index to create a new MemtEntry.
+    WorldId: 0
+    CheckStoryFlag: 0
+    FlagForWorld: World ZZ
+    CheckStoryFlagNegation: 0
+    NegationFlagForWorld: World ZZ
+    CheckArea: 0
+    Padding: 0
+    PlayerSize: 4299264
+    FriendSize: 1625344
+    Members: [89, 92, 93, 2073, 85, 86, 2397, 87, 88, 89, 91, 264, 200, 1529, 2431, 1530, 1531, 264]
+  - Index: 3 #Specify a memt index to edit. Use a new index to create a new MemtEntry.
+    WorldId: 2
+    CheckStoryFlag: 219
+    FlagForWorld: Twilight Town
+    CheckStoryFlagNegation: 208
+    NegationFlagForWorld: Twilight Town
+    CheckArea: 0
+    Padding: 0
+    PlayerSize: 3984640
+    FriendSize: 1625344
+    Members: [89, 0, 0, 0, 803]
+  - Index: 4 #Specify a memt index to edit. Use a new index to create a new MemtEntry.
+    WorldId: 2
+    CheckStoryFlag: 206
+    FlagForWorld: Twilight Town
+    CheckStoryFlagNegation: 207
+    NegationFlagForWorld: Twilight Town
+    CheckArea: 0
+    Padding: 0
+    PlayerSize: 3984640
+    FriendSize: 1625344
+    Members: [89, 0, 0, 0, 803]
+  - Index: 5 #Specify a memt index to edit. Use a new index to create a new MemtEntry.
+    WorldId: 2
+    CheckStoryFlag: 208
+    FlagForWorld: Twilight Town
+    CheckStoryFlagNegation: 209
+    NegationFlagForWorld: Twilight Town
+    CheckArea: 0
+    Padding: 0
+    PlayerSize: 3984640
+    FriendSize: 1625344
+    Members: [89]
+  - Index: 21 #Specify a memt index to edit. Use a new index to create a new MemtEntry.
+    WorldId: 14
+    CheckStoryFlag: 0
+    FlagForWorld: World ZZ
+    CheckStoryFlagNegation: 0
+    NegationFlagForWorld: World ZZ
+    CheckArea: 0
+    Padding: 0
+    PlayerSize: 4299264
+    FriendSize: 1625344
+    Members: [1002, 670, 669, 95, 998, 999, 2398, 1000, 1001, 1002, 0, 1813, 1814, 1815, 2432, 1816, 1817, 1813]
+  - Index: 22 #Specify a memt index to edit. Use a new index to create a new MemtEntry.
+    WorldId: 14
+    CheckStoryFlag: 0
+    FlagForWorld: World ZZ
+    CheckStoryFlagNegation: 0
+    NegationFlagForWorld: World ZZ
+    CheckArea: 2
+    Padding: 0
+    PlayerSize: 4299264
+    FriendSize: 1625344
+    Members: [2394, 2395, 2396, 0, 2390, 2391, 2399, 2392, 2393, 2394, 0, 2433, 2434, 2435, 2438, 2436, 2437, 2433]
+  - Index: 32 #Specify a memt index to edit. Use a new index to create a new MemtEntry.
+    WorldId: 17
+    CheckStoryFlag: 0
+    FlagForWorld: World ZZ
+    CheckStoryFlagNegation: 0
+    NegationFlagForWorld: World ZZ
+    CheckArea: 0
+    Padding: 0
+    PlayerSize: 4299264
+    FriendSize: 1782656
+    Members: [1649, 1370, 1364, 724, 1641, 1643, 2400, 1645, 1647, 1649, 0, 1685, 1686, 1687, 2439, 1688, 1690, 1685]
+  - Index: 33 #Specify a memt index to edit. Use a new index to create a new MemtEntry.
+    WorldId: 13
+    CheckStoryFlag: 0
+    FlagForWorld: World ZZ
+    CheckStoryFlagNegation: 0
+    NegationFlagForWorld: World ZZ
+    CheckArea: 0
+    Padding: 0
+    PlayerSize: 4299264
+    FriendSize: 1730176
+    Members: [1650, 1487, 1269, 0, 1642, 1644, 2401, 1646, 1648, 1650]

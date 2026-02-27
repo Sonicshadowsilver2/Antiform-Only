@@ -1,20 +1,5 @@
 Items:
 #Forms
-- Id: 29 #Final Form
-  Type: Form
-  Flag0: 1
-  Flag1: 0
-  Rank: C
-  StatEntry: 0
-  Name: 34376
-  Description: 34377
-  ShopBuy: 0
-  ShopSell: 0
-  Command: 12
-  Slot: 4
-  Picture: 269
-  Icon1: 0
-  Icon2: 25
 - Id: 30 #Antiform
   Type: Form
   Flag0: 1

@@ -1,0 +1,15 @@
+- Id: 0
+  Character: 129
+  Hp: 0
+  Mp: 0
+  Ap: 0
+  Strength: 0
+  Magic: 0
+  Defense: 0
+  ArmorSlotMax: 0
+  AccessorySlotMax: 0
+  ItemSlotMax: 0
+  Items:
+  - 33016
+  - 33017
+  Padding: []

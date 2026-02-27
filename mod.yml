@@ -1,32 +1,54 @@
 title: Antiform Only
+original Author: Shananas & Sonicshadowsilver2
 description: Changes all instances of Sora and Roxas into Antiform. This is not compatible with GoA ROM Edition.
 assets:
-#Lua Script
+#Lua Scripts
 - name: scripts/AntiformOnly.lua
   method: copy
   source:
   - name: AntiformOnly.lua
+#shopFace fix Lua thanks to TopazTK
 - name: scripts/shopfaceReconstruct.lua
   method: copy
-  source:
+  source: 
   - name: shopfaceReconstruct.lua
-#Movement for Armor Xemnas II
-- name: obj/P_EX100_HTLF.mset
-  multi: 
-  - name: obj/P_EX100_BTLF.mset
-  method: copy
-  source:
-  - name: obj/P_EX100_HTLF.mset
-#Various Stuff
+#Allow Anti to use RCs
 - name: 00objentry.bin
   method: listpatch
   type: List
   source:
   - name: objentry.yml
     type: objentry
+#sora memt edit, anti keyblade, anti movement values (anti is considred valor by the game)
 - name: 03system.bin
-  method: binarc
+  method: binarc  
   source:
+  - name: memt
+    method: listpatch
+    type: List
+    source:
+    - name: 03system.bin/memt.yml
+      type: memt
+  - name: wmst
+    type: list
+    method: copy
+    source:
+    - name: 03system.bin/wmst_0.list
+  - name: pref
+    method: binarc
+    type: binary
+    source:
+    - name: prty
+      type: list
+      method: copy
+      source:
+      - name: 03system.bin/prty_0.list
+  - method: listpatch
+    name: cmd
+    source:
+    - name: 03system.bin/CmdList.yml
+      type: cmd
+    type: list
   - name: item #Implement New Pictures & Stats
     type: list
     method: listpatch
@@ -39,19 +61,91 @@ assets:
     source:
     - name: 03system.bin/TrsrList.yml
       type: trsr
-- name: itempic/item-269.imd #Final Form
+#Keyblade for RCs
+- name: obj/W_EX010_HTLF.mset
+  multi:
+  - name: obj/W_EX010_BTLF.mset
   method: copy
   source:
-  - name: itempic/Final Form.imd
+  - name: obj/W_EX010_HTLF.mset
+#Movement for AX2
+- name: obj/P_EX100_HTLF.mset
+  multi: 
+  - name: obj/P_EX100_BTLF.mset
+  method: copy
+  source:
+  - name: obj/P_EX100_HTLF.mset
+#Valor -> Antiform
+- name: obj/P_EX100_BTLF.mdlx
+  method: copy
+  source:
+  - name: obj/P_EX100_HTLF.mdlx
+    type: internal
+- name: obj/P_EX100_BTLF.a.us
+  method: copy
+  source:
+  - name: obj/P_EX100_HTLF.a.us
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.a.us/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.a.us/-0.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.a.us/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.a.us/-1.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.a.us/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.a.us/-2.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.a.us/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.a.us/-3.dds
+    type: internal
+#Twilight Thorn
+- method: copy
+  name: obj/B_EX100.mset
+  source:
+  - name: obj/B_EX100.mset
+#Skateboard
+- name: obj/F_TT010.mset
+  method: copy
+  source:
+  - name: obj/F_TT010_SORA.mset
+    type: internal
+- name: obj/F_TT010_ROXAS.mset
+  method: copy
+  source:
+  - name: obj/F_TT010_SORA.mset
+    type: internal
 - name: itempic/item-271.imd #Antiform
   method: copy
   source:
   - name: itempic/Anti Form.imd
-- name: remastered/itempic/item-269.imd/-0.dds #Final Form
-  platform: pc
-  method: copy
-  source:
-  - name: remastered/itempic/Final Form.dds
 - name: remastered/itempic/item-271.imd/-0.dds #Antiform
   platform: pc
   method: copy
@@ -117,21 +211,6 @@ assets:
     - name: ard/dc05evt.yml
     type: AreaDataScript
 - method: binarc
-  name: ard/eh03.ard #Memory's Skyscraper Cutscenes
-  multi:
-  - name: ard/jp/eh03.ard
-  - name: ard/us/eh03.ard
-  - name: ard/fr/eh03.ard
-  - name: ard/gr/eh03.ard
-  - name: ard/it/eh03.ard
-  - name: ard/sp/eh03.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: ard/eh03evt.yml
-    type: AreaDataScript
-- method: binarc
   name: ard/hb05.ard #Ansem's Study Cutscenes
   multi:
   - name: ard/jp/hb05.ard
@@ -191,18 +270,30 @@ assets:
     source:
     - name: ard/tt28evt.yml
     type: AreaDataScript
-- method: binarc
-  name: ard/tt32.ard #Station of Serenity Cutscenes
-  multi:
-  - name: ard/jp/tt32.ard
-  - name: ard/us/tt32.ard
-  - name: ard/fr/tt32.ard
-  - name: ard/gr/tt32.ard
-  - name: ard/it/tt32.ard
-  - name: ard/sp/tt32.ard
+#mset
+- name: obj/F_EX030.mset
+  method: copy
   source:
-  - method: areadatascript
-    name: evt
+  - name: obj/F_EX030.mset
+- name: obj/F_EX030_TT.mset
+  method: copy
+  source:
+  - name: obj/F_EX030_TT.mset
+- name: obj/F_EX050.mset
+  method: copy
+  source:
+  - name: obj/F_EX050.mset
+- name: 00battle.bin
+  method: binarc
+  source:
+  - name: plrp
+    type: list
+    method: listpatch
     source:
-    - name: ard/tt32evt.yml
-    type: AreaDataScript
+    - name: 00battle.bin/PlrpList.yml
+      type: plrp
+- name: remastered/obj/W_EX010.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010.mdlx/-0.dds
